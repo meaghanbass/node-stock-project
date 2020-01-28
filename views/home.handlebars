@@ -1,4 +1,13 @@
-<h1>This is handlebars homepage</h1>
-<p>
-    {{ stuff }}
-</p>
+<h1>{{ stock.companyName }}</h1>
+
+<br/>
+
+<strong>Price: </strong>${{ stock.iexRealtimePrice }}<br/>
+<strong>Previous Close: </strong>${{ stock.previousClose }}<br/>
+<strong>YTD Change: </strong>{{ stock.ytdChange }}<br/>
+
+<hr />
+
+{{!-- {{#each stock}}
+    {{@key}} - {{this}}<br/>
+{{/each}} --}}
